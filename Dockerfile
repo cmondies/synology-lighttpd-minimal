@@ -9,5 +9,5 @@ RUN rm /var/cache/apk/*
 
 ADD ./lighttpd.conf /etc/lighttpd/lighttpd.conf
 
-#USER tor
+USER lighttpd
 CMD /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf
