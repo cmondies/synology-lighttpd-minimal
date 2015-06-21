@@ -11,4 +11,4 @@ RUN chown lighttpd /var/run/lighttpd/
 ADD ./lighttpd.conf /etc/lighttpd/lighttpd.conf
 
 USER lighttpd
-CMD /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf
+CMD /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
